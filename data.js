@@ -8,32 +8,20 @@ app.get('/', (req, res) => {
     res.send(data);
 });
 
-app.get('/products', (req, res) => {
-    res.send(data.products);
+app.get('/terrains', (req, res) => {
+    res.send(data.terrains);
 });
 
-app.get('/favorites-list', (req, res) => {
-    res.send(data.favorites);
+app.get('/machinery', (req, res) => {
+    res.send(data.machinery);
 });
 
-app.get('/notifications', (req, res) => {
-    res.send(data.notifications);
+app.get('/users', (req, res) => {
+    res.send(data.users);
 });
 
-app.get('/status-report', (req, res) => {
-    res.send(data.status);
-});
-
-app.get('/shopping-cart', (req, res) => {
-    res.send(data.cart);
-});
-
-app.get('/orders', (req, res) => {
-    res.send(data.orders);
-});
-
-app.get('/returns-list', (req, res) => {
-    res.send(data.returns);
+app.get('/resources', (req, res) => {
+    res.send(data.resources);
 });
 
 export default app;
