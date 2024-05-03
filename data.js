@@ -5,6 +5,10 @@ const app = express.Router();
 const data = JSON.parse(fs.readFileSync('data.json', 'utf-8'));
 
 app.get('/', (req, res) => {
+    res.send(data);
+});
+
+app.get('/products', (req, res) => {
     res.send(data.products);
 });
 
