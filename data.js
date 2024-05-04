@@ -24,4 +24,8 @@ app.get('/resources', (req, res) => {
     res.send(data.resources);
 });
 
+app.get('/members', (req, res) => {
+    res.send(data.members);
+});
+
 export default app;
